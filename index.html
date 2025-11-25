@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iceberg Melting Desserts</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="./images/Logo.jpg" alt="Iceberg Melting Desserts"></div>
+
+    <!-- HAMBURGER MENU -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav id="nav-links">
+      <a href="#">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <div class="hero-left">
+      <h1>Where every scoop tells a story 
+       </h1>
+       <h1>Bringing families closer, one bite at a time</h1>
+    </div>
+
+    <div class="hero-right">
+      <p>Crafted with love. Served with joy.</p>
+
+      <div class="button-group">
+        <a href="#menu" class="btn primary">Explore Menu</a>
+        <a href="#contact" class="btn outline">Contact Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Menu Section -->
+
+<section id="menu" class="menu-section">
+
+  <h2 class="section-title">Our Menu</h2>
+  <p class="section-sub">Freshly crafted treats, made to delight every craving.</p>
+
+  <!-- KUNAFA & COFFEE -->
+  <div class="menu-category">
+    <h3 class="category-title">Kunafa & Coffee</h3>
+
+    <div class="menu-block">
+      <h4 class="block-title">Kunafa</h4>
+      <ul>
+        <li><span>Classic Kunafa</span><strong>₹250</strong></li>
+        <li><span>Kunafa Caramel</span><strong>₹250</strong></li>
+        <li><span>Kunafa Sundae</span><strong>₹300</strong></li>
+        <li><span>Kunafa Nutella</span><strong>₹350</strong></li>
+        <li><span>Kunafa Butterscotch</span><strong>₹350</strong></li>
+      </ul>
+
+      <h4 class="block-title">Hot Coffee</h4>
+      <ul>
+        <li><span>Aligarh Hot Coffee</span><strong>₹50</strong></li>
+        <li><span>Caramel Hot Coffee</span><strong>₹70</strong></li>
+        <li><span>Irish Hot Coffee</span><strong>₹70</strong></li>
+      </ul>
+
+      <h4 class="block-title">Cold Coffee</h4>
+      <ul>
+        <li><span>Iceberg’s Cold Coffee</span><strong>₹100</strong></li>
+        <li><span>Cold Coffee with Ice Cream</span><strong>₹120</strong></li>
+        <li><span>Irish Cold Coffee</span><strong>₹140</strong></li>
+        <li><span>Caramel Cold Coffee</span><strong>₹140</strong></li>
+        <li><span>Hazelnut Cold Coffee</span><strong>₹140</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SIDES PARLOUR -->
+  <div class="menu-category">
+    <h3 class="category-title">Sides Parlour</h3>
+
+    <div class="menu-block">
+      <h4 class="block-title">Sides</h4>
+      <ul>
+        <li><span>Pizza Pockets (4pcs)</span><strong>₹120</strong></li>
+        <li><span>Onion Rings (5pcs)</span><strong>₹90</strong></li>
+        <li><span>French Fries</span><strong>₹80</strong></li>
+        <li><span>Peri Peri Fries</span><strong>₹100</strong></li>
+        <li><span>Loaded Fries</span><strong>₹120</strong></li>
+        <li><span>Veg Steamed Momos (8pcs)</span><strong>₹100</strong></li>
+        <li><span>Paneer Steamed Momos (8pcs)</span><strong>₹120</strong></li>
+        <li><span>Fried Veg Momos (8pcs)</span><strong>₹120</strong></li>
+        <li><span>Fried Paneer Momos (8pcs)</span><strong>₹140</strong></li>
+        <li><span>Kurkure Momos (8pcs)</span><strong>₹150</strong></li>
+        <li><span>Cheese Cigar Roll (4pcs)</span><strong>₹150</strong></li>
+        <li><span>Spring Roll (4pcs)</span><strong>₹120</strong></li>
+
+      </ul>
+
+      <h4 class="block-title">Add Ons</h4>
+      <ul>
+        <li><span>Waffle Cone</span><strong>₹30</strong></li>
+        <li><span>Waffle Basket</span><strong>₹40</strong></li>
+        <li><span>Water Bottle (MRP)</span></li>
+        <li><span>Cold Drink (MRP)</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SUNDAE & DESSERTS -->
+  <div class="menu-category">
+    <h3 class="category-title">Sundae & Desserts</h3>
+
+    <div class="menu-block">
+      <h4 class="block-title">Iceberg Special</h4>
+      <ul>
+        <li><span>Hot Chocolate Bomb</span><strong>₹120</strong></li>
+        <li><span>Iceberg Flurry</span><strong>₹150</strong></li>
+        <li><span>Fresh Fruit Punch</span><strong>₹200</strong></li>
+      </ul>
+
+      <h4 class="block-title">Sundae</h4>
+      <ul>
+        <li><span>Strawberry</span><strong>₹150</strong></li>
+        <li><span>Mango</span><strong>₹160</strong></li>
+        <li><span>Pineapple</span><strong>₹160</strong></li>
+        <li><span>Butterscotch</span><strong>₹160</strong></li>
+        <li><span>Black Currant</span><strong>₹200</strong></li>
+        <li><span>Choco Heaven</span><strong>₹220</strong></li>
+        <li><span>Iceberg’s Special</span><strong>₹250</strong></li>
+        <li><span>Make Your Own</span><strong>₹350</strong></li>
+      </ul>
+
+      <h4 class="block-title">Desserts</h4>
+      <ul>
+        <li><span>Choco Lava</span><strong>₹120</strong></li>
+        <li><span>Walnut Brownie</span><strong>₹120</strong></li>
+        <li><span>Choco Lava with Vanilla</span><strong>₹140</strong></li>
+        <li><span>Brownie Vanilla Affair</span><strong>₹170</strong></li>
+        <li><span>Sizzling Brownie with Vanilla</span><strong>₹190</strong></li>
+        <li><span>Brownie Belgian Dream</span><strong>₹200</strong></li>
+        <li><span>Brownie Boat</span><strong>₹350</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SHAKES & SOFTY -->
+  <div class="menu-category">
+    <h3 class="category-title">Shakes & Softy</h3>
+
+    <div class="menu-block">
+      <h4 class="block-title">Shakes</h4>
+      <ul>
+        <li><span>Vanilla</span><strong>₹120</strong></li>
+        <li><span>Strawberry</span><strong>₹120</strong></li>
+        <li><span>Rose</span><strong>₹120</strong></li>
+        <li><span>Mango</span><strong>₹150</strong></li>
+        <li><span>Pineapple</span><strong>₹150</strong></li>
+        <li><span>Butterscotch</span><strong>₹160</strong></li>
+        <li><span>Pista Badam</span><strong>₹160</strong></li>
+        <li><span>Black Currant</span><strong>₹180</strong></li>
+        <li><span>Bubble Gum</span><strong>₹200</strong></li>
+        <li><span>Chocoshoco</span><strong>₹200</strong></li>
+      </ul>
+
+      <h4 class="block-title">Softy</h4>
+      <ul>
+        <li><span>Vanilla</span><strong>₹30</strong></li>
+        <li><span>Mix (Vanilla + Chocolate)</span><strong>₹40</strong></li>
+        <li><span>Chocolate</span><strong>₹50</strong></li>
+      </ul>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- About Section  -->
+
+<section id="about" class="about-section">
+
+  <div class="about-container">
+
+    <div class="about-content">
+      <h2>Our Sweet Story</h2>
+      <p>
+        At Iceberg Melting Desserts, every scoop is crafted with passion, creativity,
+        and a love for unforgettable flavors. From creamy ice creams to warm desserts 
+        and refreshing shakes, we blend quality ingredients with a touch of happiness 
+        in every bite.  
+        <br><br>
+        We believe desserts are not just food—they’re moments, memories, and smiles 
+        shared with the people you love.
+      </p>
+      <a href="#menu" class="btn primary about-btn">Explore Our Menu</a>
+    </div>
+
+    <div class="about-image">
+      <img src="./images/IceCream.jpg" alt="About Iceberg Desserts" />
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Video Section  -->
+
+<section id="videos" class="video-section">
+
+  <h2 class="section-title">Latest Instagram Videos</h2>
+  <p class="section-sub">Fresh scoops, sizzling moments & behind-the-scenes fun!</p>
+
+  <div class="video-grid">
+
+    <!-- VIDEO 1 -->
+    <a href="https://www.instagram.com/p/DRW8ll5EaBd/" target="_blank" class="video-card">
+      <img src="./images/img!.png" alt="Instagram Video 1">
+      <div class="video-overlay">Watch on Instagram</div>
+    </a>
+
+    <!-- VIDEO 2 -->
+    <a href="https://www.instagram.com/p/DRRP73qkWUI/" target="_blank" class="video-card">
+      <img src="images/img2.png" alt="Instagram Video 2">
+      <div class="video-overlay">Watch on Instagram</div>
+    </a>
+
+    <!-- VIDEO 3 -->
+    <a href="https://www.instagram.com/p/DRJ6wUnkV0E/" target="_blank" class="video-card">
+      <img src="./images/img3.png" alt="Instagram Video 3">
+      <div class="video-overlay">Watch on Instagram</div>
+    </a>
+
+    <!-- VIDEO 4 -->
+    <a href="https://www.instagram.com/p/DRERVRMEcd3/" target="_blank" class="video-card">
+      <img src="images/img4.png" alt="Instagram Video 4">
+      <div class="video-overlay">Watch on Instagram</div>
+    </a>
+
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+
+<section id="contact" class="contact-section">
+
+  <div class="contact-overlay"></div>
+
+  <div class="contact-container">
+
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+
+      <p class="tagline">We’re here to serve sweetness, joy, and flavour!</p>
+
+      <div class="info-item">
+        <h4>📍 Address</h4>
+        <p>Located at Shop 16, IT Palm Court Dodhpur, Aligarh.</p>
+      </div>
+
+      <div class="info-item">
+        <h4>📞 Phone</h4>
+        <p>+91-9808433919</p>
+        <p>+91-7579960651</p>
+      </div>
+
+      <div class="info-item">
+        <h4>⏰ Hours</h4>
+        <p>Mon – Sun : 11:00 AM – 10:00 PM</p>
+      </div>
+
+      <a href="tel:+919808433919" class="btn primary contact-btn">Call Now</a>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("nav-links").classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>

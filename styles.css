@@ -1,0 +1,630 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  color: #0A2472;
+  font-family: '', 'Poppins', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  font-family:  'Poppins', sans-serif;
+  width: 100%;
+  font-size: 20px;
+  padding: 13px 4vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffffdd;
+  border-bottom: 1px solid #eee;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+}
+
+
+
+/* LOGO */
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0A2472;
+}
+
+.logo img {
+  height: 60px;
+  margin-left: 20px;
+  border: 2px solid #DC338E;
+  border-radius: 50%;
+  width: auto;
+  object-fit: cover;
+}
+
+/* NAV LINKS */
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0A2472;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #DC338E;
+}
+
+/* HAMBURGER ICON */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #0A2472;
+  border-radius: 5px;
+}
+
+/* MOBILE MENU HIDDEN */
+#nav-links {
+  transition: all 0.3s ease-in-out;
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("./images/vegan-ice-cream-cones-colored-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;   /* left align */
+  padding-left: 6vw;
+  padding-right: 6vw;
+  text-align: left;
+}
+
+
+/* HERO CONTENT PROPERLY ALIGNED */
+.hero-content {
+  position: relative;
+  z-index: 5;
+
+  max-width: 650px;     /* premium width */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  align-items: flex-start;       /* perfect left alignment */
+  justify-content: center;
+}
+
+/* HEADING */
+.hero-left h1 {
+  font-size: clamp(36px, 6vw, 60px);
+  font-weight: 400;
+  padding: 2px;
+  line-height: 1.18;
+  color: #001c71;
+  margin-bottom: 10px;
+}
+/* PARAGRAPH */
+.hero-right p {
+  font-size: clamp(16px, 2.5vw, 20px);
+  color: #333;
+  opacity: 0.95;
+  max-width: 520px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+/* BUTTON GROUP */
+.button-group {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* BUTTONS FIXED */
+.btn {
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;   
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* PRIMARY BUTTON */
+.btn.primary {
+  background: #DC338E;
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #b7286b;
+}
+
+/* OUTLINE BUTTON */
+.btn.outline {
+  border: 2px solid #0A2472;
+  color: #0A2472;
+}
+
+.btn.outline:hover {
+  background: #0A2472;
+  color: white;
+}
+
+/* MOBILE FIXES — TRUE PREMIUM RESPONSIVE */
+@media (max-width: 900px) {
+
+  .navbar{
+      height: 80px;
+  }
+
+  .hero {
+    justify-content: center;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    text-align: center;
+    background-position: center;
+  }
+
+  .hero-content {
+    align-items: center;   /* center everything */
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .hero-left h1 {
+    text-align: center;
+    font-size: clamp(30px, 7vw, 38px);
+    line-height: 1;
+  }
+
+  .hero-right p {
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .button-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 900px) {
+  nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  #nav-links.show {
+    display: flex;
+    position: absolute;
+    top: 65px;
+    right: 5vw;
+    flex-direction: column;
+    gap: 18px;
+    background: #ffffffdd;
+    backdrop-filter: blur(5px);
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+
+  .hero {
+    background-position: center;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    gap: 18px;
+    padding-top: 40px;
+    text-align: center;
+    max-width: 900px;
+  }
+
+  .hero-left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-left h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.02;
+  }
+
+  .hero-right {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .btn.primary {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+/* Menu SSection */
+
+.menu-section {
+  padding: 100px 6vw;
+  background-image: url("./images//various-ice-cream-cone-against-white-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed; /* parallax */
+}
+.menu-block {
+  background: rgba(255,255,255,0.78);
+  backdrop-filter: blur(3px);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  color: #0A2472;
+}
+
+.section-sub {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 50px;
+  opacity: 0.7;
+}
+
+.menu-category {
+  margin-bottom: 70px;
+}
+
+.category-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #DC338E;
+}
+
+.menu-block {
+  background: #f8f8fc;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+.block-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 20px 0 10px;
+  color: #0A2472;
+}
+
+.menu-block ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.menu-block li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 18px;
+}
+
+.menu-block li strong {
+  color: #DC338E;
+  font-weight: 700;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .menu-block li {
+    font-size: 16px;
+  }
+}
+
+/* About Section */
+
+.about-section {
+  padding: 100px 6vw;
+  background: #ffffff;
+}
+
+/* CONTAINER */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* TEXT CONTENT */
+.about-content {
+  flex: 1 1 480px;
+}
+
+.about-content h2 {
+  font-size: clamp(32px, 5vw, 48px);
+  color: #0A2472;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #333;
+  opacity: 0.9;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+/* BUTTON */
+.about-btn {
+  padding: 14px 35px;
+  border-radius: 35px;
+  font-size: 16px;
+}
+
+/* IMAGE */
+.about-image {
+  flex: 1 1 480px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  object-fit: cover;
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px) {
+
+  .about-section {
+    padding: 70px 6vw;
+  }
+
+  .about-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .about-content h2 {
+    text-align: center;
+  }
+
+  .about-content p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-btn {
+    margin: 0 auto;
+  }
+
+  .about-image img {
+    max-width: 400px;
+  }
+}
+
+/* Contact */ 
+
+/* CONTACT SECTION */
+.contact-section {
+  position: relative;
+  width: 100%;
+  padding: 120px 6vw;
+
+  background-image: url("./images/contact\ us.jpg");
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+}
+
+
+/* CONTENT WRAPPER */
+.contact-container {
+  position: relative;
+  z-index: 5;
+  max-width: 550px;
+}
+
+/* CONTACT INFO CARD (Glass effect) */
+.contact-info {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+
+  padding: 40px 35px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.contact-info h2 {
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 700;
+  color: #0A2472;
+  margin-bottom: 15px;
+}
+
+.tagline {
+  font-size: 18px;
+  opacity: 0.75;
+  margin-bottom: 25px;
+}
+
+.info-item {
+  margin-bottom: 20px;
+}
+
+.info-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #DC338E;
+  margin-bottom: 5px;
+}
+
+.info-item p {
+  font-size: 16px;
+  color: #0A2472;
+  opacity: 0.9;
+}
+
+/* CONTACT BUTTON */
+.contact-btn {
+  margin-top: 20px;
+  padding: 14px 32px;
+  font-size: 16px;
+  border-radius: 30px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px) {
+
+  .contact-section {
+    padding: 90px 5vw;
+    background-position: center;
+  }
+
+  .contact-info {
+    padding: 30px 25px;
+  }
+
+  .contact-info h2 {
+    text-align: center;
+  }
+
+  .tagline {
+    text-align: center;
+  }
+
+  .info-item p,
+  .info-item h4 {
+    text-align: center;
+  }
+
+  .contact-btn {
+    display: block;
+    margin: 20px auto 0;
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Video Frams */
+
+/* VIDEO SECTION */
+.video-section {
+  padding: 100px 6vw;
+  background: #ffffff;
+}
+
+.video-section .section-title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  color: #0A2472;
+}
+
+.video-section .section-sub {
+  text-align: center;
+  font-size: 18px;
+  opacity: 0.75;
+  margin-bottom: 50px;
+}
+
+/* GRID LAYOUT */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* VIDEO CARDS */
+.video-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.video-card img {
+  width: 100%;
+  display: block;
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.video-card:hover img {
+  transform: scale(1.08);
+  filter: brightness(0.7);
+}
+
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  font-size: 18px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.video-card:hover .video-overlay {
+  opacity: 1;
+}
+
